@@ -18,9 +18,9 @@ var prezzoTotUnder18 = prezzoTot - scontoUnder18;
 var prezzoTotOver65 = prezzoTot - scontoOver65;
 
 // 5. arrotondamento a due decimali dei risultati
-var prezzoTotUnder18 = Math.round(prezzoTotUnder18 * 100) / 100;
-var prezzoTotOver65 = Math.round(prezzoTotOver65 * 100) / 100;
-var prezzoTot = Math.round(prezzoTot * 100) / 100;
+var prezzoTotUnder18 = prezzoTotUnder18.toFixed(2);
+var prezzoTotOver65 = prezzoTotOver65.toFixed(2);
+var prezzoTot = prezzoTot.toFixed(2);
 
 // 6. calcolo vari sconti in base all'età. Minorenni sconto 20%, over 65 sconto 40%
 // infine stampo il risultato
@@ -33,3 +33,9 @@ if (isNaN(km) || isNaN(eta)) {
 } else {
   document.getElementById("prezzo").innerHTML = prezzoTot;
 }
+
+// PER ARROTONDARE A DUE DECIMALI POSSIAMO USARE ANCHE
+
+// var prezzoTotUnder18 = Math.round(prezzoTotUnder18 * 100) / 100;
+// var prezzoTotOver65 = Math.round(prezzoTotOver65 * 100) / 100;
+// var prezzoTot = Math.round(prezzoTot * 100) / 100;
