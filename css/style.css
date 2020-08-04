@@ -1,0 +1,48 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+h1{
+  font-size: 50px;
+  color: #ffffff;
+  text-shadow: 4px 3px #000000;
+  margin-bottom: 50px 0;
+}
+
+.container{
+  width: 70%;
+  height: 100vh;
+  margin: auto;
+  padding: 0 50px;
+  text-align: center;
+  background: linear-gradient(90deg, #C94141, #860701, #C94141);
+}
+
+.prezzo_finale{
+  border: 2px solid #000000;
+}
+
+.prezzo_finale p, .prezzo_finale span{
+  font-size: 35px;
+  color: #ffffff;
+}
+
+p{
+  font-size: 20px;
+  color: #ffffff;
+  text-align: left;
+  padding: 20px 0;
+}
+
+span{
+  font-weight: 700;
+  font-size: 30px;
+  color: #000000;
+}
+
+small{
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.5);
+}
