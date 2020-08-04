@@ -18,8 +18,8 @@ var prezzoTotUnder18 = prezzoTot - scontoUnder18;
 var prezzoTotOver65 = prezzoTot - scontoOver65;
 
 // 5. arrotondamento a due decimali dei risultati
-var prezzoRound18 = Math.round(prezzoTotUnder18 * 100) / 100;
-var prezzoRound65 = Math.round(prezzoTotOver65 * 100) / 100;
+var prezzoTotUnder18 = Math.round(prezzoTotUnder18 * 100) / 100;
+var prezzoTotOver65 = Math.round(prezzoTotOver65 * 100) / 100;
 var prezzoTot = Math.round(prezzoTot * 100) / 100;
 
 // 6. calcolo vari sconti in base all'età. Minorenni sconto 20%, over 65 sconto 40%
@@ -27,9 +27,9 @@ var prezzoTot = Math.round(prezzoTot * 100) / 100;
 if (isNaN(km) || isNaN(eta)) {
   alert("Attenzione! Inserire solo valori numerici! Aggiornare la pagina e riprovare.");
 } else if (eta < 18) {
-  document.getElementById("prezzo").innerHTML = prezzoRound18;
+  document.getElementById("prezzo").innerHTML = prezzoTotUnder18;
 } else if (eta >= 65) {
-  document.getElementById("prezzo").innerHTML = prezzoRound65;
+  document.getElementById("prezzo").innerHTML = prezzoTotOver65;
 } else {
   document.getElementById("prezzo").innerHTML = prezzoTot;
 }
